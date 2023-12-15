@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title> Home | MSM Milk Tea Company </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/MSM.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    .ez-outline {
+      -webkit-text-stroke: 3px black;
+    }
+    .ez-trans {
+      transition: 0.3s;
+    }
+    .ez-hollow {
+      border: solid 1px white;
+    }
+    .to-top-button {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.4s;
+    z-index: 1;
+    }
+    .to-top-button:hover {
+        opacity: 0.8;
+    }
+    .to-top-button:active {
+        bottom: 32px;
+        opacity: 0;
+    }
+    #top {
+        position: relative;
+        top: -800px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+</head>
+<body style="background-color: rgb(24, 22, 22);">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-card w3-left-align w3-large w3-text-white" style="background: linear-gradient(to right, black,rgb(38, 4, 4), rgb(70, 4, 4));">
+      <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right w3-xlarge" style="margin-top: 21px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+      <a href="index.html" class="w3-bar-item">
+        <img src="images/MingTeng's logo.jpg" style="height:75px; width: 75px; border-radius: 50%;">
+      </a>
+  
+      <a href="about.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>About</b></a>
+  
+      <div class="w3-bar-item w3-hide-small w3-padding-32" style="border-bottom: white solid 3px;"><b>Menu</b></div>
+  
+      <a href="branches.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Branches</b></a>
+
+      <a href="gallery.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Gallery</b></a>
+      
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-animate-right w3-card-4" style="background-color: white">
+      <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About</a>
+      <div class="w3-bar-item w3-padding-large w3-opacity" style="background-color: lightgray;">Menu</div>
+      <a href="branches.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Branches</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Gallery</a>
+    </div>
+  </div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:150px 16px; background: url(images/menu-jumbotron.png);">
+    <br>
+    <div>
+      <img src="images/MingTeng's header.png" style="width: 450px;">
+    </div>
+    <p class="w3-large w3-text-white" style="padding-top: 1%; font-weight: bold;"><i>"Where each mouthful is bliss."</i></p>
+</header>
+
+<a href="#top" class="to-top-button">
+  <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+    <i style="font-size:24px;" class="fa">&#xf077;</i>
+  </div>
+</a>
+<section id="top"></section>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu" style="margin-bottom: 10%;">
+    <div class="w3-content" style="max-width:700px">
+   
+      <br>
+      <br>
+      <h5 class="w3-center w3-xlarge w3-text-white"><b>MENU</b></h5>
+      <p class="w3-center w3-text-white">
+        Welcome to MingTeng's Orignal Kinalasan menu, where we invite you to savor the rich flavors of this Bikolnon delight. Our menu showcases the star attraction "Kinalas". Dive into a symphony of textures and savory goodness. At MingTeng's, we celebrate the art of comfort dining, offering a menu that allows you to Indulge in the warmth and satisfaction that our original Kinalas brings.
+      </p>
+      <br>
+      <br>
+    
+      <div class="w3-row w3-center w3-card w3-padding w3-white">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+          <div class="w3-col s6 tablink">MEALS</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+          <div class="w3-col s6 tablink">DRINKS</div>
+        </a>
+      </div>
+  
+      <div id="Eat" class="w3-container menu w3-padding-48 w3-card-4" style="border: 1px solid white;">
+
+        <!-- MEALS -->
+
+        <h5 class="w3-center w3-xlarge w3-text-red" style="margin-bottom: 7.5%;"><i>~ SOLO MEAL ~</i></h5>
+
+        <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/dish1.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 30%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Kinalas
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  MingTeng's kinalas is made up of traditonal kinalas ingredients but with the innovative addition of pan-roasted pork which sets it apart from other kinalas dishes in Bicol. It is comprised of noodles topped with scraped meat from a pig or cow's head, and enriched with a deep-brown sauce. The dish is served in a hot broth with additional spices added for flavor.
+                  <br>
+                  <br>
+                  regular:
+                      <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;55</b></span>
+                      &nbsp; &nbsp; &nbsp;
+                  jumbo: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;65</b></span>
+                </span>
+              </h5>
+            </div>
+          </div>
+
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/dish2.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 30%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Kinalas w/ egg
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  MingTeng's "Kinalas w/ egg" is made of traditonal kinalas ingredients with the innovative addition of pan-roasted pork. It is made of noodles topped with scraped meat from a pig or cow's head, and enriched with a brown sauce. The dish is served in a hot broth with the addition of a hard boiled egg as garnish.
+                  <br>
+                  <br>
+                  regular:
+                      <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;65</b></span>
+                      &nbsp; &nbsp; &nbsp;
+                  jumbo: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;75</b></span>
+                </span>
+              </h5>
+            </div>
+          </div>
+  
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/dish3.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 30%;">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Loglog
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  MingTeng's loglog is a Bikolnon soup dish that is made of savory broth, fresh mami noodles, and a thick flavorful sauce. The sauce is similar to that of a Pansit Palabok in terms of consistency, but it is deep brown in color instead of an orange undertone.
+                  <br>
+                  <br>
+                  regular:
+                      <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;30</b></span>
+                      &nbsp; &nbsp; &nbsp;
+                  jumbo: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;35</b></span>
+                </span>
+              </h5>
+            </div>
+          </div>
+
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/dish4.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 30%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Loglog w/ egg
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  MingTeng's "Loglog w/ egg" is a Bikolnon soup dish that is made of savory broth, fresh mami noodles, and a thick flavorful sauce, with the addition of a hard boiled egg on top. The sauce is similar to that of a Pansit Palabok in terms of consistency, but it is deep brown in color instead of an orange undertone.
+                  <br>
+                  <br>
+                  regular:
+                      <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;40</b></span>
+                      &nbsp; &nbsp; &nbsp;
+                  jumbo: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;45</b></span>
+                </span>
+              </h5>
+            </div>
+          </div>
+
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/dish5.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 30%;">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Special Kinalas
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  MingTeng's "Special Kinalas" is made of traditonal kinalas ingredients with the innovative addition of pan-roasted pork. It is made of noodles topped with scraped meat from a pig or cow's head, and enriched with a brown sauce. The dish is served in a hot broth with the addition of a hard boiled egg and chicharon as garnish. Complimented with a side of turon/puto and a softdrink of your choice.
+                  <br>
+                  <br>
+                  regular:
+                      <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;110</b></span>
+                      &nbsp; &nbsp; &nbsp;
+                  jumbo: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                      <b>&#8369;120</b></span>
+                </span>
+              </h5>
+            </div>
+          </div>
+
+        <!-- ADD ONS -->
+
+        <h5 class="w3-center w3-xlarge w3-text-red" style="margin-bottom: 7.5%;"><i>~ ADD ONS ~</i></h5>
+
+        <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/toppings.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 20%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Extra toppings
+                <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                &#8369;20</span><br>
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  These are additional ingredients or enhancements added to the dish or food item beyond its essential components. These toppings are chosen to complement or enhance the flavors, textures, and overall appeal of the base dish. Particularly, adding more sauce, garlic, and spring onions to your order.
+                </span>
+              </h5>
+            </div>
+          </div>
+  
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/egg.png" style="height: 150px; width: 150px; border-radius: 50%;  margin-top: 20%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Boiled Egg
+                <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                &#8369;12</span><br>
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  An egg that has been boiled in its shell until both the egg white and yolk solidify. This cooking method involves immersing the raw egg in boiling water and allowing it to cook for a specified period, resulting in a firm white and a fully-cooked, solid yolk.
+                </span>
+              </h5>
+            </div>
+          </div>
+  
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/chicharon.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 20%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Chicharon
+                <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                &#8369;12</span><br>
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  Filipino chicharon, commonly known as "chicharon" or "tsitsaron," is a traditional Filipino snack made by deep-frying pork skin until it becomes crispy and puffy. It is typically seasoned with salt and sometimes garlic to enhance its savory flavor.
+                </span>
+              </h5>
+            </div>
+          </div>
+  
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/turon.png" style="height: 150px; width: 150px; border-radius: 50%;  margin-top: 20%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Turon
+                <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                &#8369;15</span><br>
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  Turon is a popular Filipino dessert and snack that consists of thinly sliced bananas, usually saba or cooking bananas, and sometimes with jackfruit, rolled in brown sugar and wrapped in a spring roll wrapper. The roll is then deep-fried until golden and the sugar caramelizes, creating a crispy and sweet outer layer. 
+                </span>
+              </h5>
+            </div>
+          </div>
+          
+          <div class="w3-row">
+            <div class="w3-col" style="width:150px">
+              <img src="images/puto.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 20%">
+            </div>
+            <div class="w3-rest w3-text-red">
+              <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Puto
+                <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                &#8369;7</span><br>
+                <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                  Puto is a traditional Filipino steamed rice cake that is light, fluffy, and slightly sweet. Made from rice flour, sugar, and baking powder, the batter is poured into small molds or banana leaves and then steamed until it rises and sets.
+                </span>
+              </h5>
+            </div>
+          </div>
+      
+      </div>
+  
+      <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-4" style="border: 1px solid white;">
+
+        <!-- DRINKS -->
+
+        <h5 class="w3-center w3-xlarge w3-text-red" style="margin-bottom: 7.5%;"><i>~ SOFT DRINKS ~</i></h5>
+
+        <div class="w3-row">
+          <div class="w3-col" style="width:150px">
+            <img src="images/softdrinks.png" style="height: 150px; width: 150px; margin-top: 30%">
+          </div>
+          <div class="w3-rest w3-text-red">
+            <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Soft Drinks
+              <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                Soft drinks, often referred to as sodas or carbonated beverages, are refreshing non-alcoholic drinks. Typically sweetened and flavored, these beverages are infused with carbon dioxide to create a fizzy, bubbly sensation when opened. Soft drinks come in a variety of flavors, ranging from classic cola to citrus, fruit, or ginger ale. Served with chilling ice, they provide a thirst-quenching aftertaste, making them a popular a popular choice to pair with MingTeng's original kinalas.
+                <br>
+                <br>
+                8oz:
+                    <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                    <b>&#8369;15</b></span>
+                    &nbsp; &nbsp; &nbsp;
+                12oz: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                    <b>&#8369;20</b></span>
+              </span>
+            </h5>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <div class="w3-col" style="width:150px">
+            <img src="images/water.png" style="height: 150px; width: 150px; border-radius: 50%; margin-top: 30%">
+          </div>
+          <div class="w3-rest w3-text-red">
+            <h5 style="display: inline-block; margin-left: 5%; margin-top: 5%; margin-bottom: 10%;">Bottled Water
+              <span class="w3-text-white w3-medium" style="display: inline-block; padding-top: 2.5%;">
+                Bottled mineral water is a pure and refreshing beverage sourced from natural springs or underground reservoirs. Filtered through layers of rock and soil, it absorbs essential minerals, resulting in a crisp and clean taste. Packed in convenient bottles, this water is often prized for its purity, free from additives and impurities. Whether enjoyed on its own to stay hydrated or paired with a meal, bottled mineral water offers a simple and healthy choice, providing a taste of nature's clarity in every sip.
+                <br>
+                <br>
+                small:
+                    <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                    <b>&#8369;15</b></span>
+                    &nbsp; &nbsp; &nbsp;
+                big: <span class="w3-small" style="background-color: white; color: black; padding: 2%; margin-left: 5%; border-radius: 50%; font-weight: bold;">
+                    <b>&#8369;20</b></span>
+              </span>
+            </h5>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+  </div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge w3-text-red">Quality not quantity.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-center w3-opacity w3-light-gray">  
+  <p class="w3-text-black">© 2023 MingTeng's Original Kinalasan. All rights reserved.</p>
+ </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-gray";
+    }
+    document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
