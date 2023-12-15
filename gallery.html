@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery | MingTeng's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/MingTeng's logo.jpg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .ez-outline {
+    -webkit-text-stroke: 3px black;
+  }
+  .ez-trans {
+    transition: 0.3s;
+  }
+  .ez-hollow {
+    border: solid 1px white;
+  }
+  .to-top-button {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.4s;
+    z-index: 1;
+  }
+  .to-top-button:hover {
+    opacity: 0.8;
+  }
+  .to-top-button:active {
+    bottom: 32px;
+    opacity: 0;
+  }
+  #top {
+    position: relative;
+    top: -800px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+</head>
+<body style="background-color: rgb(24, 22, 22);">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large w3-text-white" style="background: linear-gradient(to right, black,rgb(38, 4, 4), rgb(70, 4, 4));">
+    <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right w3-xlarge" style="margin-top: 21px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a href="index.html" class="w3-bar-item">
+      <img src="images/MingTeng's logo.jpg" style="height:75px; width: 75px; border-radius: 50%;">
+    </a>
+
+    <a href="about.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>About</b></a>
+
+    <a href="menu.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Menu</b></a>
+
+    <a href="branches.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Branches</b></a>
+    
+    <div class="w3-bar-item w3-hide-small w3-padding-32" style="border-bottom: white solid 3px;"><b>Gallery</b></div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-animate-right w3-card-4" style="background-color: white">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About</a>
+    <a href="menu.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Menu</a>
+    <a href="branches.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Branches</a>
+    <div class="w3-bar-item w3-padding-large w3-opacity" style="background-color: lightgray;">Gallery</div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:150px 16px; background: url(images/gallery-jumbotron.png);">
+  <br>
+  <div>
+    <img src="images/MingTeng's header.png" style="width: 450px;">
+  </div>
+  <p class="w3-xlarge w3-text-white"><b>SIKSIK &nbsp;| &nbsp;MALASA&nbsp; |&nbsp; SULIT</b></p>
+</header>
+
+<a href="#top" class="to-top-button">
+  <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+    <i style="font-size:24px;" class="fa">&#xf077;</i>
+  </div>
+</a>
+<section id="top"></section>
+
+  <br>
+  <br>
+
+<h1 class="w3-text-white" style="border-bottom: solid 3px white; margin: 0% 3%; padding: 1%;">
+  <b>Food Gallery</b>
+</h1>
+
+  <br>
+
+<!-- food Archives -->
+<div style="margin-right: 3%; margin-left: 3%;">
+  
+    <!-- Photo grid -->
+    <div class="">
+      <div class="w3-row">
+        <div class="w3-quarter">
+          <img src="archive/Food/h1.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v3.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/h5.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v7.png" style="width:95%; margin: 3%">
+          <img src="Archive/Food/h7.png" style="width:95%; margin: 3%">
+       </div>
+        
+       <div class="w3-quarter">
+          <img src="archive/Food/v1.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v2.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/h6.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v8.png" style="width:95%; margin: 3%">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="archive/Food/v4.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/h3.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v5.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v9.png" style="width:95%; margin: 3%">
+        </div>
+    
+        <div class="w3-quarter">
+          <img src="archive/Food/h4.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v6.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/h2.png" style="width:95%; margin: 3%">
+          <img src="archive/Food/v10.png" style="width:95%; margin: 3%">
+          <img src="Archive/Food/h8.png" style="width:95%; margin: 3%">
+        </div>
+      </div>
+    </div>
+
+</div>
+
+  <br>
+  <br>
+
+<h1 class="w3-text-white" style="border-bottom: solid 3px white; margin: 0% 3%; padding: 1%;">
+  <b>Interior Gallery</b>
+</h1>
+
+  <br>
+
+<!-- interior Archives -->
+<div style="margin-right: 3%; margin-left: 3%;">
+
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-row">
+      <div class="w3-quarter">
+        <img src="archive/Interior/h1.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v3.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/h5.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v7.png" style="width:95%; margin: 3%">
+        <img src="Archive/Interior/h7.png" style="width:95%; margin: 3%">
+     </div>
+      
+     <div class="w3-quarter">
+        <img src="archive/Interior/v1.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v9.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/h6.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v5.png" style="width:95%; margin: 3%">
+      </div>
+      
+      <div class="w3-quarter">
+        <img src="archive/Interior/v4.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/h3.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v2.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v8.png" style="width:95%; margin: 3%">
+      </div>
+  
+      <div class="w3-quarter">
+        <img src="archive/Interior/h4.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v6.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/h2.png" style="width:95%; margin: 3%">
+        <img src="archive/Interior/v10.png" style="width:95%; margin: 3%">
+        <img src="Archive/Interior/h8.png" style="width:95%; margin: 3%">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<h1 class="w3-text-white" style="border-bottom: solid 3px white; margin: 0% 3%; padding: 1%;">
+<b>Customer Gallery</b>
+</h1>
+
+<br>
+
+<!-- customers Archives -->
+<div style="margin-right: 3%; margin-left: 3%;">
+
+  <!-- Photo grid -->
+  <div class="">
+    <div class="w3-row">
+      <div class="w3-quarter">
+        <img src="archive/Customers/h1.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v3.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/h5.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v7.png" style="width:95%; margin: 3%">
+        <img src="Archive/Customers/h7.png" style="width:95%; margin: 3%">
+     </div>
+      
+     <div class="w3-quarter">
+        <img src="archive/Customers/v1.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v2.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/h6.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v8.png" style="width:95%; margin: 3%">
+      </div>
+      
+      <div class="w3-quarter">
+        <img src="archive/Customers/v4.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/h3.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v9.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v5.png" style="width:95%; margin: 3%">
+      </div>
+  
+      <div class="w3-quarter">
+        <img src="archive/Customers/h4.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v6.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/h2.png" style="width:95%; margin: 3%">
+        <img src="archive/Customers/v10.png" style="width:95%; margin: 3%">
+        <img src="Archive/Customers/h8.png" style="width:95%; margin: 3%">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<!-- filler Grid -->
+<div class="w3-center w3-container" style="padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+    <div class="w3-content">
+      <div>
+      </div>   
+    </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge w3-text-red">Quality not quantity.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-center w3-opacity w3-light-gray">  
+ <p class="w3-text-black">© 2023 MingTeng's Original Kinalasan. All rights reserved.</p>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>
