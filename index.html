@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home | MingTeng's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/MingTeng's logo.jpg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.ez-outline {
+  -webkit-text-stroke: 3px black;
+}
+.ez-trans {
+  transition: 0.3s;
+}
+.ez-hollow {
+  border: solid 1px white;
+}
+.to-top-button {
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.to-top-button:hover {
+  opacity: 0.8;
+}
+.to-top-button:active {
+  bottom: 32px;
+  opacity: 0;
+}
+#top {
+  position: relative;
+  top: -800px;
+}
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body style="background-color: rgb(24, 22, 22);">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large w3-text-white" style="background: linear-gradient(to right, black,rgb(38, 4, 4), rgb(70, 4, 4));">
+    <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right w3-xlarge" style="margin-top: 21px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <div class="w3-bar-item">
+      <img src="images/MingTeng's logo.jpg" style="height:75px; width: 75px; border-radius: 50%;">
+    </div>
+
+    <a href="about.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>About</b></a>
+
+    <a href="menu.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Menu</b></a>
+
+    <a href="branches.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Branches</b></a>
+
+    <a href="gallery.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Gallery</b></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-animate-right w3-card-4" style="background-color: white">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About</a>
+    <a href="menu.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Menu</a>
+    <a href="branches.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Branches</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Gallery</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:150px 16px; background: url(images/MingTeng\'s\ gif.gif);">
+  <br>
+  <div>
+    <img src="images/MingTeng's header.png" style="width: 450px;">
+  </div>
+  <p class="w3-xlarge w3-text-white"><b>SIKSIK &nbsp;| &nbsp;MALASA&nbsp; |&nbsp; SULIT</b></p>
+</header>
+
+<a href="#top" class="to-top-button">
+  <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+    <i style="font-size:24px;" class="fa">&#xf077;</i>
+  </div>
+</a>
+<section id="top"></section>
+
+<!-- collage -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-center w3-padding-32">
+        <img src="images/collage.png" width="100%">
+      </div>
+    </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-black">
+  <div class="w3-content">
+    <div class="w3-third">
+      <img src="images/1st.png" class="w3-margin-right" style="width: 100%; padding-top: 64px; padding-bottom: 64px; padding-right: 15px; padding-left: 15px;">
+    </div>
+
+    <div class="w3-twothird w3-center">
+      <h1 class="w3-center w3-text-red"><b>Our journey</b></h1>
+      <h5 class="w3-padding-32 w3-text-white">Experience the rich flavors of original kinalas at MingTeng's, where our culinary journey began with a passion for serving others. Rooted in Bikolnon traditions, our origin story is a tale of family recipe, local ingredients, and a commitment to crafting a memorable dining experience for Bikolnons. From humble beginnings to a thriving establishment, we've woven a narrative of culinary excellence that celebrates the heart and soul of our community. Join us on this gastronomic voyage that honors our heritage, creating a dining destination where each dish tells a story.</h5>
+
+      <a href="about.html" class="w3-button w3-padding-large w3-large ez-trans ez-hollow">
+        Learn more</a>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third">
+      <img src="images/2nd.png" class="w3-margin-right" style="width: 100%; padding-top: 64px; padding-bottom: 64px; padding-right: 15px; padding-left: 15px;">
+    </div>
+
+    <div class="w3-twothird w3-center">
+      <h1 class="w3-center w3-text-red"><b>Flavorful recipe</b></h1>
+      <h5 class="w3-padding-32 w3-text-white">Indulge your senses in a symphony of flavors at MingTeng's. Our menu is a unique culinary experience of locally sourced ingredients. From the hot and tasty broth of our original kinalas to our sweet and crunchy turon, each dish is a celebration of taste, creativity, and curated harmony of flavors. Our commitment to quality and innovation ensures a memorable dining adventure for every customer's palate. At MingTeng's, you can surely get a taste of the extraordinary and elevate your dining experience with each mouthful.</h5>
+
+      <a href="menu.html" class="w3-button w3-white w3-padding-large w3-large ez-trans" >
+       Browse menu</a>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-black">
+  <div class="w3-content">
+    <div class="w3-third">
+      <img src="images/3rd.png" class="w3-margin-right" style="width: 100%; padding-top: 64px; padding-bottom: 64px; padding-right: 15px; padding-left: 15px;">
+    </div>
+
+    <div class="w3-twothird w3-center">
+      <h1 class="w3-center w3-text-red"><b>Branch Locations</b></h1>
+      <h5 class="w3-padding-32 w3-text-white">Visit us at our various business locations. With each branch strategically placed, we bring our signature flavor and warm hospitality closer to you. Whether downtown or perched in a vibrant neighborhood, every MingTeng's location offers a unique ambiance while maintaining the consistent excellence that you expect. Explore our diverse branches, each with its own charm, and embark on a gastronomic journey that transcends boundaries. From urban hubs to cozy corners, find your perfect spot to indulge in the exceptional dining experience that we offer.</h5>
+
+      <a href="branches.html" class="w3-button w3-padding-large w3-large ez-trans ez-hollow">
+        Explore</a>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third">
+      <img src="images/4th.png" class="w3-margin-right" style="width: 100%; padding-top: 64px; padding-bottom: 64px; padding-right: 15px; padding-left: 15px;">
+    </div>
+
+    <div class="w3-twothird w3-center">
+      <h1 class="w3-center w3-text-red"><b>Browse our album</b></h1>
+      <h5 class="w3-padding-32 w3-text-white">
+        Immerse yourself in the visual feast of MingTeng's captivating album, where each shot tells a story of culinary Mastery and ambiance. From the warm glow of intimate dining spaces to the vibrant hues of expertly crafted dishes, our gallery invites you to relive the moments that define our culinary journey. Experience the essence of our restaurant through a lens, showcasing the meticulous attention to detail in every plate and the inviting charm of our interiors. Join us in this visual celebration, a glimpse into the soul of MingTeng's, where quality is more important that quantity. </h5>
+
+      <a href="gallery.html" class="w3-button w3-white w3-padding-large w3-large ez-trans">
+        See archives</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge w3-text-red">Quality not quantity.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-center w3-opacity w3-light-gray">  
+  <p class="w3-text-black">© 2023 MingTeng's Original Kinalasan. All rights reserved.</p>
+ </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
