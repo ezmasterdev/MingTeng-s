@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Branches | MingTeng's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/MingTeng's logo.jpg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .ez-outline {
+    -webkit-text-stroke: 3px black;
+  }
+  .ez-trans {
+    transition: 0.3s;
+  }
+  .ez-hollow {
+    border: solid 1px white;
+  }
+  .to-top-button {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.4s;
+    z-index: 1;
+  }
+  .to-top-button:hover {
+    opacity: 0.8;
+  }
+  .to-top-button:active {
+    bottom: 32px;
+    opacity: 0;
+  }
+  #top {
+    position: relative;
+    top: -800px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .ez-black-opaque {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+</style>
+</head>
+<body style="background-color: rgb(24, 22, 22);">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large w3-text-white" style="background: linear-gradient(to right, black,rgb(38, 4, 4), rgb(70, 4, 4));">
+    <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right w3-xlarge" style="margin-top: 21px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a href="index.html" class="w3-bar-item">
+        <img src="images/MingTeng's logo.jpg" style="height:75px; width: 75px; border-radius: 50%;">
+    </a>
+
+    <a href="about.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>About</b></a>
+
+    <a href="menu.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Menu</b></a>
+    
+    <div class="w3-bar-item w3-hide-small w3-padding-32" style="border-bottom: white solid 3px;"><b>Branches</b></div>
+
+    <a href="gallery.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Gallery</b></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-animate-right w3-card-4" style="background-color: white">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About</a>
+    <a href="menu.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Menu</a>
+    <div class="w3-bar-item w3-padding-large w3-opacity" style="background-color: lightgray;">Branches</div>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Gallery</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:150px 16px; background: url(images/branches-jumbotron.png);">
+  <br>
+  <div>
+    <img src="images/MingTeng's header.png" style="width: 450px;">
+  </div>
+  <p class="w3-large w3-text-white" style="padding-top: 1%;"><b>Liboton &nbsp;| &nbsp;Dayangdang&nbsp; |&nbsp; Sta. Cruz |&nbsp; Triangulo |&nbsp; Cart</b></p>
+</header>
+
+<a href="#top" class="to-top-button">
+  <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+    <i style="font-size:24px;" class="fa">&#xf077;</i>
+  </div>
+</a>
+<section id="top"></section>
+
+<!-- First Grid -->
+<div class="w3-container" style="padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+  <div class="w3-content w3-text-white">
+    <div style="border-bottom: white solid 1.5px; padding-bottom: 1%;">
+      <h1 class="w3-xlarge"><span style="color:rgb(173, 1, 1); font-size: larger;"><i class="fa fa-map-marker"></i></span>&nbsp;<b> Liboton — Branch</b></h1>
+    </div>
+  <br>
+  <br>
+  <div class="w3-content" style="max-width:1200px">
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Liboton Branch" src="images/liboton1.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Liboton Branch" src="images/liboton2.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Liboton Branch" src="images/liboton3.png" style="width:100%;cursor:pointer">
+      </div>
+    </div>
+  </div><br>
+<div class="w3-row-padding w3-container w3-antiquewhite">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-xlarge"><b>MingTeng's Kinalasan — Liboton Branch</b></h1>
+      <h5 style="padding-bottom: 16px;">
+        Zone 5B Acacia St., Peñafrancia Naga City
+      </h5>   
+      <p class="w3-text-grey">
+        Come and visit our branch in Liboton, located in Zone 5B Acacia St., Peñafrancia Naga City. Experience what Bikolnon hospitality is all about and enjoy MingTeng's original kinalas. If you are near this branch, what are you waiting for? Seize the opportunity and savor Naga City's best kinalas! Be it for breakfast, lunch, snack, or even dinner, MingTeng's original kinalas can surely satiate your hunger any time of the day. Don't forget to tell your friends to try us out as well!
+      </p>
+      <br>
+      <div class="w3-center">
+        <a href="https://www.facebook.com/mingteng.s.liboton" target="_blank" class="w3-button w3-margin-bottom ez-hollow ez-trans" style="border-radius: 20px;"><i class="fa fa-facebook-official"></i>&nbsp; Visit page</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.google.com/maps?ll=13.634715,123.193637&z=17&t=m&hl=en&gl=PH&mapclient=embed&q=Acacia+St+Naga+Camarines+Sur" target="_blank" class="w3-button w3-margin-bottom w3-black ez-trans" style="border-radius: 20px;"><i class="fa fa-map"></i>&nbsp; View on larger map</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="w3-third" style="padding-top: 0%; padding-left: 2.5%;">
+      <div class="w3-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1938.6893128848633!2d123.19234963840826!3d13.634717303308744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1f3365beaeaff%3A0x2f9ac9097cbabad7!2sAcacia%20St%2C%20Naga%2C%20Camarines%20Sur!5e0!3m2!1sen!2sph!4v1702229909727!5m2!1sen!2sph" width="325px" height="325px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-container" style="padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+  <div class="w3-content w3-text-white">
+    <div style="border-bottom: white solid 1.5px; padding-bottom: 1%;">
+      <h1 class="w3-xlarge"><span style="color:rgb(173, 1, 1); font-size: larger;"><i class="fa fa-map-marker"></i></span>&nbsp;<b> Dayangdang — Branch</b></h1>
+    </div>
+  <br>
+  <br>
+  <div class="w3-content" style="max-width:1200px">
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Dayangdang Branch" src="images/dayangdang1.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Dayangdang Branch" src="images/dayangdang2.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Dayangdang Branch" src="images/dayangdang3.png" style="width:100%;cursor:pointer">
+      </div>
+    </div>
+  </div><br>
+<div class="w3-row-padding w3-container w3-antiquewhite">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-xlarge"><b>MingTeng's Kinalasan — Dayangdang Branch</b></h1>
+      <h5 style="padding-bottom: 16px;">
+        Zone 5B Acacia St., Peñafrancia Naga City
+      </h5>   
+      <p class="w3-text-grey">
+        Come and visit our branch in Dayangdang, located in 10-D Solid Street Dayangdang Naga City. Experience what Bikolnon hospitality is all about and enjoy MingTeng's original kinalas. If you are near this branch, what are you waiting for? Seize the opportunity and savor Naga City's best kinalas! Be it for breakfast, lunch, snack, or even dinner, MingTeng's original kinalas can surely satiate your hunger any time of the day. Don't forget to tell your friends to try us out as well!
+      </p>
+      <br>
+      <div class="w3-center">
+        <a href="https://www.facebook.com/profile.php?id=100089053936277" target="_blank" class="w3-button w3-margin-bottom ez-hollow ez-trans" style="border-radius: 20px;"><i class="fa fa-facebook-official"></i>&nbsp; Visit page</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.google.com/maps?ll=13.627159,123.191482&z=16&t=m&hl=en&gl=PH&mapclient=embed&q=10+Solid+St+Naga+Camarines+Sur" target="_blank" class="w3-button w3-margin-bottom w3-black ez-trans" style="border-radius: 20px;"><i class="fa fa-map"></i>&nbsp; View on larger map</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="w3-third" style="padding-top: 0%; padding-left: 2.5%;">
+      <div class="w3-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.5025731488904!2d123.18890707443826!3d13.627164500168202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18cca9d320603%3A0xf55fa40fbecf81bb!2s10%20Solid%20St%2C%20Naga%2C%20Camarines%20Sur!5e0!3m2!1sen!2sph!4v1702274504966!5m2!1sen!2sph" width="325" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-container" style="padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+  <div class="w3-content w3-text-white">
+    <div style="border-bottom: white solid 1.5px; padding-bottom: 1%;">
+      <h1 class="w3-xlarge"><span style="color:rgb(173, 1, 1); font-size: larger;"><i class="fa fa-map-marker"></i></span>&nbsp;<b> Sta. Cruz — Branch</b></h1>
+    </div>
+  <br>
+  <br>
+  <div class="w3-content" style="max-width:1200px">
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Sta. Cruz Branch" src="images/sta.cruz1.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Sta. Cruz Branch" src="images/sta.cruz2.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Sta. Cruz Branch" src="images/sta.cruz3.png" style="width:100%;cursor:pointer">
+      </div>
+    </div>
+  </div><br>
+<div class="w3-row-padding w3-container w3-antiquewhite">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-xlarge"><b>MingTeng's Kinalasan — Sta. Cruz Branch</b></h1>
+      <h5 style="padding-bottom: 16px;">
+        Mangga St, Sta Cruz, Naga, 4400 Camarines Sur
+      </h5>   
+      <p class="w3-text-grey">
+        Come and visit our branch in Sta. Cruz, located in Mangga St, Sta Cruz, Naga, 4400 Camarines Sur. Experience what Bikolnon hospitality is all about and enjoy MingTeng's original kinalas. If you are near this branch, what are you waiting for? Seize the opportunity and savor Naga City's best kinalas! Be it for breakfast, lunch, snack, or even dinner, MingTeng's original kinalas can surely satiate your hunger any time of the day. Don't forget to tell your friends to try us out as well!
+      </p>
+      <br>
+      <div class="w3-center">
+        <a href="https://www.facebook.com/mingtengskinalas.stacruz" target="_blank" class="w3-button w3-margin-bottom ez-hollow ez-trans" style="border-radius: 20px;"><i class="fa fa-facebook-official"></i>&nbsp; Visit page</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.google.com/maps/search/Mangga+St.+Sta+cruz+nc/@13.6283507,123.1833443,19z/data=!3m1!4b1?entry=ttu" target="_blank" class="w3-button w3-margin-bottom w3-black ez-trans" style="border-radius: 20px;"><i class="fa fa-map"></i>&nbsp; View on larger map</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="w3-third" style="padding-top: 0%; padding-left: 2.5%;">
+      <div class="w3-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d576.3912030768515!2d123.1838609743627!3d13.628395772459223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18cb379009689%3A0x3bbe1d4a4341f16!2sSanta%20Cruz%20St%2C%20Naga%2C%20Camarines%20Sur!5e0!3m2!1sen!2sph!4v1702276833134!5m2!1sen!2sph" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-container" style="padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+  <div class="w3-content w3-text-white">
+    <div style="border-bottom: white solid 1.5px; padding-bottom: 1%;">
+      <h1 class="w3-xlarge"><span style="color:rgb(173, 1, 1); font-size: larger;"><i class="fa fa-map-marker"></i></span>&nbsp;<b> Triangulo — Branch</b></h1>
+    </div>
+  <br>
+  <br>
+<div class="w3-row-padding w3-container w3-antiquewhite">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-xlarge"><b>MingTeng's Kinalasan — Triangulo Branch</b></h1>
+      <h5 style="padding-bottom: 16px;">
+        Zone 3 Langsones St. Triangulo
+      </h5>   
+      <p class="w3-text-grey">
+        Come and visit our branch in Sta. Cruz, located in Zone 3 Langsones St. Triangulo. Experience what Bikolnon hospitality is all about and enjoy MingTeng's original kinalas. If you are near this branch, what are you waiting for? Seize the opportunity and savor Naga City's best kinalas! Be it for breakfast, lunch, snack, or even dinner, MingTeng's original kinalas can surely satiate your hunger any time of the day. Don't forget to tell your friends to try us out as well!
+      </p>
+      <br>
+      <div class="w3-center">
+        <a href="https://www.google.com/maps?ll=13.618046,123.188793&z=16&t=m&hl=en&gl=PH&mapclient=embed&cid=5123964771747708304" target="_blank" class="w3-button w3-margin-bottom w3-black ez-trans" style="border-radius: 20px;"><i class="fa fa-map"></i>&nbsp; View on larger map</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="w3-third" style="padding-top: 0%; padding-left: 2.5%;">
+      <div class="w3-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.652039793915!2d123.18621787443809!3d13.618051200377383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18d7f80b84233%3A0x471bfacfdda33d90!2sMingteng%20Kinalas!5e0!3m2!1sen!2sph!4v1702283517775!5m2!1sen!2sph" width="325" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-container" style="padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+  <div class="w3-content w3-text-white">
+    <div style="border-bottom: white solid 1.5px; padding-bottom: 1%;">
+      <h1 class="w3-xlarge"><span style="color:rgb(173, 1, 1); font-size: larger;"><i class="fa fa-map-marker"></i></span>&nbsp;<b> Food Cart — Branch</b></h1>
+    </div>
+  <br>
+  <br>
+  <div class="w3-content" style="max-width:1200px">
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Food Cart Branch" src="images/cart2.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Food Cart Branch" src="images/cart1.png" style="width:100%;cursor:pointer">
+      </div>
+      <div class="w3-col s4">
+        <img class="w3-opacity w3-hover-opacity-off w3-cursor ez-trans" onclick="onClick(this)" alt="MingTeng's Kinalasan — Food Cart Branch" src="images/cart3.png" style="width:100%;cursor:pointer">
+      </div>
+    </div>
+  </div><br>
+<div class="w3-row-padding w3-container w3-antiquewhite">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-xlarge"><b>MingTeng's Kinalasan — Food Cart Branch</b></h1>
+      <h5 style="padding-bottom: 16px;">
+        Visit our page to get updated on our next stop in Naga City!
+      </h5>   
+      <p class="w3-text-grey">
+        Come and try our food cart branch if you happen to come across us. Experience what Bikolnon hospitality is all about and enjoy MingTeng's original kinalas. What are you waiting for? Seize the opportunity and savor Naga City's best kinalas! Be it for breakfast, lunch, snack, or even dinner, MingTeng's original kinalas can surely satiate your hunger any time of the day. Don't forget to tell your friends to try us out as well!
+      </p>
+      <br>
+      <div class="w3-center">
+        <a href="https://www.facebook.com/profile.php?id=61551725023435" target="_blank" class="w3-button w3-margin-bottom ez-hollow ez-trans" style="border-radius: 20px;"><i class="fa fa-facebook-official"></i>&nbsp; Visit page</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.google.com/maps/place/Naga,+Camarines+Sur/@13.640646,123.270464,11z/data=!4m6!3m5!1s0x33a18cad50331fcb:0x1dd856f8b79915ca!8m2!3d13.6217753!4d123.1948238!16zL20vMDZwbjRf?hl=en&entry=ttu" target="_blank" class="w3-button w3-margin-bottom w3-black ez-trans" style="border-radius: 20px;"><i class="fa fa-map"></i>&nbsp; View on larger map</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="w3-third" style="padding-top: 0%; padding-left: 2.5%;">
+      <div class="w3-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147560.9959952999!2d123.18666563350459!3d13.620629231813924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18cad50331fcb%3A0x1dd856f8b79915ca!2sNaga%2C%20Camarines%20Sur!5e0!3m2!1sen!2sph!4v1702285697036!5m2!1sen!2sph" width="325" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge w3-text-red">Quality not quantity.</h1>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal ez-black-opaque w3-center" style="padding-top:0;" onclick="this.style.display='none'">
+  <span class="w3-button w3-circle w3-black w3-xlarge w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image w3-round-xxlarge">
+    <p id="caption" style="color: white; font-size: large; font-weight: bold;" class="w3-padding-32"><b></b></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-center w3-opacity w3-light-gray">  
+  <p class="w3-text-black">© 2023 MingTeng's Original Kinalasan. All rights reserved.</p>
+ </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+  
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  
+
+</body>
+</html>
