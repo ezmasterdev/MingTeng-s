@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Articles | MingTeng's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/MingTeng's logo.jpg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.ez-outline {
+  -webkit-text-stroke: 3px black;
+}
+.ez-trans {
+  transition: 0.3s;
+}
+.ez-hollow {
+  border: solid 1px white;
+}
+.to-top-button {
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.to-top-button:hover {
+  opacity: 0.8;
+}
+.to-top-button:active {
+  bottom: 32px;
+  opacity: 0;
+}
+#top {
+  position: relative;
+  top: -800px;
+}
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body style="background-color: rgb(24, 22, 22);">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large w3-text-white" style="background: linear-gradient(to right, black,rgb(38, 4, 4), rgb(70, 4, 4));">
+    <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right w3-xlarge" style="margin-top: 21px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+    <div class="w3-bar-item">
+      <img src="images/MingTeng's logo.jpg" style="height:75px; width: 75px; border-radius: 50%;">
+    </div>
+
+    <a href="index.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans"><b>Home</b></a>
+
+    <a href="menu.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans"><b>Menu</b></a>
+
+    <a href="branches.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans"><b>Branches</b></a>
+
+    <div class="w3-dropdown-hover">
+      <button class="w3-hide-small w3-button w3-padding-32 ez-trans"><b>Dropdown <span class="fa fa-caret-down"></span></b></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans"><b>About Us</b></a>
+
+        <div class="w3-bar-item w3-padding-large w3-opacity" style="background-color: lightgray;"><b>Articles</b></div>
+
+        <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans"><b>Gallery</b></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-animate-right w3-card-4" style="background-color: white">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Home</a>
+    <a href="menu.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Menu</a>
+    <a href="branches.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Branches</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About Us</a>
+    <div class="w3-bar-item w3-padding-large w3-opacity" style="background-color: lightgray;">Articles</div>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Gallery</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:150px 16px; background: url(add-imgs/articles-jumbotron.png);">
+  <br>
+  <div>
+    <img src="images/MingTeng's header.png" style="width: 350px;">
+  </div>
+  <p class="w3-large w3-text-white w3-large" style="padding-top: 1%; font-weight: bold;">Events & Sponsorships</p>
+</header>
+
+<a href="#top" class="to-top-button">
+  <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+    <i style="font-size:24px;" class="fa">&#xf077;</i>
+  </div>
+</a>
+<section id="top"></section>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+
+<br>
+<br>
+
+<div class="w3-content" style="max-width:1600px">
+  
+    <!-- Grid -->
+    <div class="w3-row w3-padding">
+  
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+      
+        <!-- 1st Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large w3-card-4" id="1st entry">
+          <div class="w3-center">
+            <h3>VICENTE DAY</h3>
+            <h5>Community Outreach Program, <span class="w3-opacity w3-medium">December 16, 2023</span></h5>
+          </div>
+  
+          <div class="w3-justify">
+            <div class="w3-center">
+                <img src="add-imgs/1st entry.png" style="width: 100%" class="w3-padding-16">
+                <span class="w3-opacity w3-center">Image taken during MingTeng's recent community outreach program.</span>
+            </div>
+            <p><strong>"Vicente day" is a yearly event organized by Mingteng's every December 16, to commemorate the death anniversary of Vicente Pelagio, one of MingTeng's founders.</strong> It is a day of poignant celebration of vision, dedication, and culinary artistry. Behind every thriving establishment is the creative force that birthed its unique identity, and acknowledging the founder is a tribute to their unwavering commitment. The act of honoring a restaurant founder is a gesture that extends beyond the walls of the establishment. <strong>It is a recognition of the countless hours spent perfecting recipes, the bold risks taken to bring a dream to life, and the enduring legacy that flavors the very essence of the dining experience.</strong> Such acknowledgment fosters a sense of gratitude among patrons, employees, and the community, establishing a connection that transcends the mere act of dining and transforms it into a celebration of the human spirit behind the culinary masterpiece..
+            <br><br>
+            <strong>This year, MingTeng's decided to celebrate "Vicente Day" by sharing their blessings to others. So, they conducted a community outreach program during the event.</strong> Embarking on a community outreach program is a transformative endeavor that seeks to create positive change and foster a sense of unity. Our program, rooted in compassion and commitment, and it aims to extend a helping hand to those in need within our local community. We recognize that a thriving community is built on the strength of its members, and our outreach program is also a testament to our belief in the collective power of kindness and support. <strong>By engaging with the community on a personal level, we hope to forge lasting connections and contribute to the well-being of all residents, creating a ripple effect of positive change that extends far beyond the duration of our outreach initiatives.</strong>
+        </p>
+          </div>
+        </div>
+  
+        <hr>
+
+        <!-- 2nd Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large w3-card-4" id="2nd entry">
+            <div class="w3-center">
+              <h3>ONLY FANS: YEAR-END BICOL TOUR</h3>
+              <h5>Live @Pili, Camarines Sur, <span class="w3-opacity w3-medium">December 15, 2023</span></h5>
+            </div>
+    
+            <div class="w3-justify">
+              <div class="w3-center">
+                  <img src="add-imgs/2nd entry.png" style="width: 100%" class="w3-padding-16">
+                  <span class="w3-opacity w3-center">Pluto Astro Studios' "Only Fans: Year-End Bicol Tour” promotion poster.</span>
+              </div>
+              <p><strong>MingTeng's believe that by sponsoring a band such as "Android-18 will play a pivotal role in enabling the band to reach new heights and share their artistry with a broader audience.</strong> Sponsoring a band performance is a dynamic collaboration that not only supports the arts but also cultivates a vibrant cultural tapestry within the community. By investing in the creativity and talent of a musical ensemble, sponsors play a pivotal role in enabling the band to reach new heights and share their artistry with a broader audience. <strong>sponsorship transcends mere financial backing; it becomes a shared commitment to the enrichment of the local arts scene.</strong> 
+              <br><br>
+              <strong>As sponsors, we take pride in contributing to the realization of the band's artistic vision, whether through providing resources for equipment, venue support, or promotional efforts.</strong> In doing so, we become partners in the creation of an unforgettable musical experience that resonates with the audience and leaves a lasting impact on the community. Sponsoring a band performance is not just about supporting music; it's about fostering a cultural legacy that inspires, entertains, and unites people through the universal language of music.</p>
+            </div>
+          </div>
+
+        <hr>
+  
+        <!-- 3rd Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large w3-card-4" id="3rd entry">
+            <div class="w3-center">
+              <h3>MAGARAO FUTSAL TOURNAMENT</h3>
+              <h5>@Magarao Convention Center, <span class="w3-opacity w3-center">December 3, 2023</span></h5>
+            </div>
+    
+            <div class="w3-justify">
+              <div class="w3-center">
+                  <img src="add-imgs/3rd entry.png" style="width: 100%" class="w3-padding-16">
+                  <span class="w3-opacity w3-center">An appreciation poster for MingTeng's participation in the futsal tournament.</span>
+              </div>
+              <p><strong>Futsal is a Soccer-based sport that is usually played indoors instead of a large field.</strong> The smaller field size ensures a game that is intense and fast-paced, with more opportunity for goal scoring. It is played by two teams of five players each, one of whom serves as the goalie <strong>MingTeng's, particularly the Dayangdang branch, participated in the recently held futsal tournament at Magarao Convention center last December 3, 2023.</strong> Magarao is a third-class municipality in the Philippine province of Camarines Sur, formally known as the Municipality of Magarao. 26,742 people reside there, according to the 2020 census. Magarao is also a part of the Metro Naga Urban Area.
+              <br><br>
+              <strong>MingTeng's believe that participating in sports tournaments holds paramount importance in fostering personal development, teamwork, and a healthy lifestyle.</strong> Beyond the thrill of competition, these tournaments provide individuals with opportunities to enhance their physical fitness, hone their skills, and test their limits. The experience of joining a sports tournament instills a sense of discipline, resilience, and strategic thinking, qualities that extend far beyond the playing field. Moreover, tournaments serve as a platform for building camaraderie and teamwork, as athletes collaborate towards a common goal, learn to trust one another, and celebrate victories together. <strong>The competitive nature of tournaments also teaches valuable lessons in handling success and setbacks gracefully, promoting character development and sportsmanship.</strong> Whether for amateurs or seasoned athletes, the journey through a sports tournament is a powerful avenue for personal growth, self-discovery, and the cultivation of a lifelong passion for a healthy and active lifestyle.</p>
+            </div>
+          </div>
+        
+        <hr>
+  
+        <!-- 4th Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large w3-card-4" id="4th entry">
+            <div class="w3-center">
+              <h3>JVF MINGTENG's CUP</h3>
+              <h5>@Metro Naga Sports Complex Pacol, Naga City, <span class="w3-opacity w3-center">August 13, 2023</span></h5>
+            </div>
+    
+            <div class="w3-justify">
+              <div class="w3-center">
+                  <img src="add-imgs/4th entry.png" style="width: 100%" class="w3-padding-16">
+                  <span class="w3-opacity w3-center">Image taken during MingTeng's 2023 JVF Cup at Metro Naga Sports Complex.</span>
+              </div>
+              <p><strong>JVF (Junior Varsity Football) is a sports tournament intended for encouraging the youth in participating in a friendly football competetion.</strong> Although upperclassmen may occasionally play on JV teams, most junior varsity teams are made up of players in their freshman and sophomore years of school. Because of this, junior varsity teams are sometimes referred to as freshman or sophomore teams. The level of intensity on these teams varies depending on the field they play on.
+              <br><br>
+              <strong>MingTeng's believe that Encouraging the youth in junior varsity football is an investment in their physical well-being, character development, and the formation of lifelong skills.</strong> The JV football experience is not merely about the score on the scoreboard; it's a journey that instills values such as discipline, perseverance, and teamwork. <strong>Coaches and mentors play a crucial role in fostering a positive environment, emphasizing the importance of effort, improvement, and camaraderie over mere victory.</strong> The junior varsity stage serves as a vital stepping stone where young athletes can refine their skills, discover their strengths, and learn how to overcome challenges on and off the field. Emphasizing a growth mindset and celebrating individual progress can inspire a sense of confidence that extends beyond the football field into various aspects of their lives. Encouraging these aspiring players not only nurtures their athletic potential but also molds them into resilient, goal-oriented individuals who will carry the lessons learned on the JV football field into their future endeavors.
+              <br><br>
+              <strong>That is why MingTeng's decided to organize a friendly JVF tournament to engage the youth in activities that nurture desirable qualities and lifelong skills.</strong> MingTeng's JVF Cup was comprised of 5 categories, Namely: players "Born on 2011 (mixed)" with FREE registration, "Born on 2009 (boys)" with a registration fee of 1000 pesos, "Born on 2009 (girls)" with a registration fee of 1000 pesos, "Born on 2007 (boys)" with a registration fee of 1000 pesos, "Born on 2007 (girls)" with a registration fee of 1000 pesos, "men's open" with a registration fee of 1500 pesos, and "women's open" with a registration fee of 1500 pesos.</p> 
+            </div>
+          </div>
+        
+        <hr>
+  
+        <!-- 5th Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large w3-card-4" id="5th entry">
+            <div class="w3-center">
+              <h3>"RECKLESS BIYERNES"</h3>
+              <h5>Live @Jugs & Mugs, <span class="w3-opacity w3-center">January 27, 2023</span></h5>
+            </div>
+    
+            <div class="w3-justify">
+              <div class="w3-center">
+                  <img src="add-imgs/5th entry.png" style="width: 100%" class="w3-padding-16">
+                  <span class="w3-opacity w3-center">Pluto Astro Studios' "Rekless Biyernes” promotion poster.</span>
+              </div>
+              <p><strong>Pluto Astro Studios is an event planner, rehearsal space, and recording studio situated on the second floor of SaGuijo, Makati.</strong> Event planning, which is among the scope of their services, is a multifaceted endeavor that requires meticulous planning, creativity, and attention to detail. From concept inception to execution, the process involves coordinating various elements seamlessly to create a memorable and successful event. <strong>MingTeng's have always been an avid sponsor of their events at the vicinity of Naga City, with "Reckless Biyernes" as one of those events.</strong>
+              <br><br>
+              <strong>Sponsoring an event offers a myriad of benefits for businesses and organizations seeking to enhance their visibility and connect with target audiences.</strong> It provides a platform for brand exposure, as sponsors could definitely acquire prominent placement in marketing materials, signage, and promotional campaigns associated with the event. This heightened visibility contributes to increased brand awareness and recognition. Sponsoring an event also fosters positive associations, as the sponsor aligns with the values and themes of the occasion, enhancing the brand's image. Additionally, sponsorship also contributes to long-term brand loyalty, as consumers often remember and appreciate companies that actively support and invest in community events. Event sponsorship can lead to valuable partnerships, networking, and potential collaborations within the industry. <strong>In essence, sponsoring an event is not just a marketing strategy; it is a dynamic avenue for brand elevation, community engagement, and fostering meaningful connections.</strong></p>
+            </div>
+          </div>
+        
+      <!-- END BLOG ENTRIES -->
+      </div>
+
+      <!-- About/Information menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-white w3-margin">
+          <img src="images/MingTeng's logo.jpg" style="width:100%" class="">
+          <div class="w3-container w3-black w3-justify">
+            <h4>Events & Sponsorships</h4>
+            <p>An endeavor of showcasing building brand awareness and establishing meaningful connections with potential clients, partners, and industry stakeholders.</p>
+          </div>
+        </div>
+        <hr>
+  
+        <!-- Posts -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>MingTeng's 2023 Events</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <a href="#1st entry" style="text-decoration: none;">
+              <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                <img src="add-imgs/list1.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">VICENTE DAY</span>
+                <br>
+                <span>Community Outreach Program</span>
+              </li>
+            </a>
+            <a href="#2nd entry" style="text-decoration: none;">
+              <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                <img src="add-imgs/list2.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">ONLY FANS: YEAR-END BICOL TOUR</span>
+                <br>
+                <span>Live @Pili, Camarines Sur</span>
+              </li>
+            </a>
+            <a href="#3rd entry" style="text-decoration: none;">
+              <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                <img src="add-imgs/list3.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">MAGARAO FUTSAL TOURNAMENT</span>
+                <br>
+                <span>@Magarao Convention Center</span>
+              </li>
+            </a>
+            <a href="#4th entry" style="text-decoration: none;">
+              <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                <img src="add-imgs/list4.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">JVF MINGTENG's CUP</span>
+                <br>
+                <span>@Metro Naga Sports Complex Pacol, Naga City</span>
+              </li>
+            </a>
+            <a href="#5th entry" style="text-decoration: none;">
+              <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                <img src="add-imgs/list5.png" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">RECKLESS BIYERNES</span>
+                <br>
+                <span>Live @Jugs & Mugs</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <hr>
+
+        <!-- Event Gallery -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Event Gallery</h4>
+          </div>
+          <div class="w3-row-padding w3-white">
+            <div class="w3-col s6">
+              <p><img src="add-imgs/h4.png" style="width:100%"></p>
+              <p><img src="add-imgs/h2.png" style="width:100%"></p>
+            </div>
+            <div class="w3-col s6">
+              <p><img src="add-imgs/h6.png" style="width:100%"></p>
+              <p><img src="add-imgs/h5.png" style="width:100%"></p>
+           </div>
+           <div class="w3-col s6">
+            <p><img src="add-imgs/h7.png" style="width:100%"></p>
+         </div>
+         <div class="w3-col s6">
+            <p><img src="add-imgs/h3.png" style="width:100%"></p>
+         </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Navigation -->
+        <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Navigate our other pages</h4>
+            </div>
+            <ul class="w3-ul w3-hoverable w3-white">
+              <a href="index.html" style="text-decoration: none;">
+                <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                  <img src="images/MingTeng's logo.jpg" class="w3-left w3-margin-right" style="width:50px;">
+                  <span class="w3-large">HOMEPAGE</span>
+                  <br>
+                  <br>
+                </li>
+              </a>
+              
+              <a href="about.html" style="text-decoration: none;">
+                <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                  <img src="images/MingTeng's logo.jpg" class="w3-left w3-margin-right" style="width:50px;">
+                  <span class="w3-large">ABOUT US</span>
+                  <br>
+                  <br>
+                </li>
+              </a>
+              
+              <a href="menu.html" style="text-decoration: none;">
+                <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                  <img src="images/MingTeng's logo.jpg" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">OUR MENU</span>
+                  <br>
+                  <br>
+                </li>
+              </a>
+              
+              <a href="branches.html" style="text-decoration: none;">
+                <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                  <img src="images/MingTeng's logo.jpg" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">OUR LOCATIONS</span>
+                  <br>
+                  <br>
+                </li>
+              </a>
+              
+              <a href="gallery.html" style="text-decoration: none;">
+                <li class="w3-padding-16 ez-trans" style="cursor: pointer;">
+                  <img src="images/MingTeng's logo.jpg" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">OUR GALLERY</span>
+                  <br>
+                  <br>
+                </li>
+              </a>
+            </ul>
+          </div>
+  
+      <!-- END About/Intro Menu -->
+      </div>
+  
+    <!-- END GRID -->
+    </div>
+  
+  <!-- END w3-content -->
+  </div>
+
+  <br>
+  <br>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge w3-text-red">Quality not quantity.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-center w3-opacity w3-light-gray">  
+  <p class="w3-text-black">© 2023 MingTeng's Original Kinalasan. All rights reserved.</p>
+ </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
