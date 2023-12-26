@@ -56,36 +56,51 @@ html {
 <div class="w3-top">
   <div class="w3-bar w3-card w3-left-align w3-large w3-text-white" style="background: linear-gradient(to right, black,rgb(38, 4, 4), rgb(70, 4, 4));">
     <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right w3-xlarge" style="margin-top: 21px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    
+
     <div class="w3-bar-item">
       <img src="images/MingTeng's logo.jpg" style="height:75px; width: 75px; border-radius: 50%;">
     </div>
 
-    <a href="about.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>About</b></a>
+    <div class="w3-bar-item w3-hide-small w3-padding-32" style="border-bottom: white solid 3px;"><b>Home</b></div>
 
-    <a href="menu.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Menu</b></a>
+    <a href="menu.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans"><b>Menu</b></a>
 
-    <a href="branches.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Branches</b></a>
+    <a href="branches.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans"><b>Branches</b></a>
 
-    <a href="gallery.html" class="w3-bar-item w3-hide-small w3-button w3-padding-32 ez-trans" ><b>Gallery</b></a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-hide-small w3-button w3-padding-32 ez-trans"><b>Dropdown <span class="fa fa-caret-down"></span></b></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans"><b>About Us</b></a>
+
+        <a href="articles.html" class="w3-bar-item w3-button w3-padding-large ez-trans"><b>Articles</b></a>
+
+        <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans"><b>Gallery</b></a>
+
+        <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large ez-trans"><b>Contact Us</b></a>
+      </div>
+    </div>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-animate-right w3-card-4" style="background-color: white">
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About</a>
+    <div class="w3-bar-item w3-padding-large w3-opacity" style="background-color: lightgray;">Home</div>
     <a href="menu.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Menu</a>
     <a href="branches.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Branches</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large ez-trans">About Us</a>
+    <a href="articles.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Articles</a>
     <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Gallery</a>
+    <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large ez-trans">Contact Us</a>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-container w3-center" style="padding:150px 16px; background: url(images/MingTeng\'s\ gif.gif); background-color: black;">
-  <br>
-  <div>
-    <img src="images/MingTeng's header.png" style="width: 350px;">
-  </div>
-  <p class="w3-xlarge w3-text-white"><b>SIKSIK &nbsp;| &nbsp;MALASA&nbsp; |&nbsp; SULIT</b></p>
+    <br>
+    <div>
+      <img src="images/MingTeng's header.png" style="width: 350px;">
+    </div>
+    <p class="w3-xlarge w3-text-white"><b>SIKSIK &nbsp;| &nbsp;MALASA&nbsp; |&nbsp; SULIT</b></p>
 </header>
 
 <a href="#top" class="to-top-button">
@@ -169,6 +184,42 @@ html {
 
       <a href="gallery.html" class="w3-button w3-white w3-padding-large w3-large ez-trans">
         See archives</a>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-black">
+  <div class="w3-content">
+    <div class="w3-third">
+      <img src="add-imgs/list1.png" class="w3-margin-right" style="width: 100%; padding-top: 64px; padding-bottom: 64px; padding-right: 15px; padding-left: 15px;">
+    </div>
+
+    <div class="w3-twothird w3-center">
+      <h1 class="w3-center w3-text-red"><b>See articles</b></h1>
+      <h5 class="w3-padding-32 w3-text-white">
+        Embark on a virtual journey through MingTeng's event articles that offers a tantalizing glimpse into the dynamic and vibrant world where culinary artistry converges with festive celebrations. These articles serve as curated invitations to a spectrum of gastronomic experiences. Immerse yourself in the excitement as each article unveils the intricate details of MingTeng's previous events. Explore the fusion of flavors and discover the stories behind meticulously crafted menus designed to elevate the dining experience. These restaurant event articles serve as a virtual gateway to a world where food meets festivity in delightful harmony. </h5>
+
+      <a href="articles.html" class="w3-button w3-white w3-padding-large w3-large ez-trans">
+        View</a>
+    </div>
+  </div>
+</div>
+
+<!-- sixth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third">
+      <img src="images/6th.png" class="w3-margin-right" style="width: 100%; padding-top: 64px; padding-bottom: 64px; padding-right: 15px; padding-left: 15px;">
+    </div>
+
+    <div class="w3-twothird w3-center">
+      <h1 class="w3-center w3-text-red"><b>Reach us now</b></h1>
+      <h5 class="w3-padding-32 w3-text-white">
+        At MingTeng's, we value every customer's experience and strive to create a seamless and enjoyable journey for all. Your feedback is not just important to us; it's crucial. We encourage you to engage with us and share any concerns, questions, or suggestions you may have. Our commitment to exceptional customer service means that your input plays a pivotal role in helping us understand your needs better. Whether you have inquiries about our services, career opportunities, or encounter any issues, we're here to listen. we are dedicated to assist you promptly and effectively. By engaging with us, you become an integral part of our ongoing effort to enhance your overall experience. Your insights empower us to refine our offerings and ensure that we consistently meet and exceed your expectations.</h5>
+
+      <a href="gallery.html" class="w3-button w3-white w3-padding-large w3-large ez-trans">
+        Contact us</a>
     </div>
   </div>
 </div>
